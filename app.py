@@ -108,8 +108,8 @@ def main():
                             ('Use a pre-loaded test image', 'Upload a custom test image'))
 
         if test_source == 'Use a pre-loaded test image':
-            test_option = st.selectbox('Choose from 9 different test samples',
-                options=(1, 2, 3, 4, 5, 6, 7, 8, 9)
+            test_option = st.selectbox('Choose from 10 different test samples',
+                options=(1, 2, 3, 4, 5, 6, 7, 8, 9,10)
             )
             test_selection = test_options[test_option-1]
             disp_test_selection = Image.open(test_selection)
